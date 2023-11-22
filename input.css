@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-[500] text-[14px];
+  }
+}
+
+@layer components {
+  .bar {
+    @apply w-[5px] h-[40px] rounded-full shrink-0;
+  }
+  .bar--ok {
+    @apply bg-[#21B062];
+  }
+  .bar--warning {
+    @apply bg-[#FFB72B];
+  }
+  .bar--danger {
+    @apply bg-[#DE3618];
+  }
+}
